@@ -18,16 +18,18 @@ namespace MVC5Course.Controllers
             return View();
         }
 
+        [SharedViewBag(MyProperty = "About")]
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            //ViewBag.Message = "Your application description page.";
 
             return View();
         }
 
+        [SharedViewBag(MyProperty = "About")]
         public ActionResult PartialAbout()
         {
-            ViewBag.Message = "Your application description page.";
+            //ViewBag.Message = "Your application description page.";
 
             if (Request.IsAjaxRequest())
             {
