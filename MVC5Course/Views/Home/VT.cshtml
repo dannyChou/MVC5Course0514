@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = "";
+}
+
+@DateTime.Now
+
+@(1 + 2)
+
+@if (ViewBag.IsEnabled)
+{
+    @:啟用
+    <br />
+    <span>啟用</span>
+    <text>Danny</text>
+}
+else
+{
+    @:停用
+    <br />
+    <span>停用</span>
+    <text>Danny</text>
+}
+
+<a href="mailto:teacher@example.com">teacher@example.com</a>
+
+<a href="mailto:teacher@example.com">teacher@@example.com</a>
+
+
+@Html.Raw("<span style='font-weight: bold;'>描述文字</span>")
+
+@{ 
+    ViewBag.Description = "<span style='font-weight: bold;'>描述文字</span>";
+}
+
+@ViewBag.Description
