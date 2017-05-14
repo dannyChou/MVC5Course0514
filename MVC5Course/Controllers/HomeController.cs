@@ -18,19 +18,20 @@ namespace MVC5Course.Controllers
             return View();
         }
 
-        [SharedViewBag(MyProperty = "About")]
+        [SharedViewBag]
         public ActionResult About()
         {
-            //ViewBag.Message = "Your application description page.";
-            throw new ArgumentException("Error  Handled");
+            // ViewBag.Message = "Your application description page.";
+
+            throw new ArgumentException("Error Handled!!");
 
             return View();
         }
 
-        [SharedViewBag(MyProperty = "About")]
+        [SharedViewBag(MyProperty = "")]
         public ActionResult PartialAbout()
         {
-            //ViewBag.Message = "Your application description page.";
+            // ViewBag.Message = "Your application description page.";
 
             if (Request.IsAjaxRequest())
             {
