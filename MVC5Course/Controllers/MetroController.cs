@@ -16,6 +16,12 @@ namespace MVC5Course.Controllers
 
         public ActionResult Tasks()
         {
+            //var a = new
+            //{
+            //    id = 1,
+            //    name ="",
+            //    @class = "1113"
+            //};
             return View();
         }
 
