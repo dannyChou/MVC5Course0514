@@ -97,6 +97,8 @@
         @Html.DisplayFor(model => model.ZipCode)
     </dd>
 
+        @Html.DisplayFor(m=>m, "GoogleMapForLongitude");
+        @Html.Partial("DisplayTemplates/GoogleMapForLongitude", Model)
     <dt>
         @Html.DisplayNameFor(model => model.Longitude)
     </dt>

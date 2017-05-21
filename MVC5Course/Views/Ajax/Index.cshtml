@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@Ajax.ActionLink("取得時間","GetDate",new AjaxOptions() {
+    UpdateTargetId = "now"
+})
+
+<div id="now">
+</div>
