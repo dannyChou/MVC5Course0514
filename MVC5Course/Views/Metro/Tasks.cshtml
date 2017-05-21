@@ -2,6 +2,9 @@
     <li><a href="@Url.Action("Tasks","Metro")">Tasks</a></li>
 }
 
+@if (IsAjax) {
+    Layout = "";
+}
 
 <div class="row-fluid">
 
