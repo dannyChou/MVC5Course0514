@@ -52,6 +52,14 @@
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -302,6 +310,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="Content\WannaCry.png" />
     <Content Include="favicon.ico" />
     <Content Include="file-manager.html" />
@@ -312,6 +321,37 @@
     <Content Include="Content\Site.css" />
     <Content Include="icon.html" />
     <Content Include="index.html" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\counter.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\excanvas.js" />
+    <Content Include="js\fullcalendar.min.js" />
+    <Content Include="js\jquery-1.9.1.min.js" />
+    <Content Include="js\jquery-migrate-1.0.0.min.js" />
+    <Content Include="js\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="js\jquery.chosen.min.js" />
+    <Content Include="js\jquery.cleditor.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.dataTables.min.js" />
+    <Content Include="js\jquery.elfinder.min.js" />
+    <Content Include="js\jquery.flot.js" />
+    <Content Include="js\jquery.flot.pie.js" />
+    <Content Include="js\jquery.flot.resize.min.js" />
+    <Content Include="js\jquery.flot.stack.js" />
+    <Content Include="js\jquery.gritter.min.js" />
+    <Content Include="js\jquery.imagesloaded.js" />
+    <Content Include="js\jquery.iphone.toggle.js" />
+    <Content Include="js\jquery.knob.modified.js" />
+    <Content Include="js\jquery.masonry.min.js" />
+    <Content Include="js\jquery.noty.js" />
+    <Content Include="js\jquery.raty.min.js" />
+    <Content Include="js\jquery.sparkline.min.js" />
+    <Content Include="js\jquery.ui.touch-punch.js" />
+    <Content Include="js\jquery.uniform.min.js" />
+    <Content Include="js\jquery.uploadify-3.1.min.js" />
+    <Content Include="js\modernizr.js" />
+    <Content Include="js\retina.js" />
     <Content Include="login.html" />
     <Content Include="messages.html" />
     <Content Include="Models\EFGeneratePartialClass.tt">
@@ -475,7 +515,6 @@
     <Folder Include="css\" />
     <Folder Include="font\" />
     <Folder Include="img\" />
-    <Folder Include="js\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

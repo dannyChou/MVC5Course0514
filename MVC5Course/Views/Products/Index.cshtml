@@ -53,7 +53,7 @@
             @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }) |
             @Ajax.ActionLink("Details", "Details", new { id = item.ProductId }, new AjaxOptions()
        {
-           UpdateTargetId = "Details"
+           UpdateTargetId = "Details",Confirm = "確認要載入嗎?"
             }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.ProductId })
         </td>
