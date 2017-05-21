@@ -14,9 +14,20 @@ namespace MVC5Course.Controllers
             return View();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        /// <remarks>
+        /// 這裡的id 有做ModelBind 會產生ModelState
+        /// </remarks>
         public ActionResult Edit(int id)
         {
-            return View(db.Product.Find(id));
+            var product = db.Product.Find(id);
+            product.ProductName = "TEST Danny";
+
+            return View(product);
         }
 
         [HttpPost]
