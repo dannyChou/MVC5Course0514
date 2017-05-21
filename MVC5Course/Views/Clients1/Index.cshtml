@@ -6,9 +6,14 @@
 
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+@using (Html.BeginForm("Index","Clients1",FormMethod.Get))
+{
+    <text>
+    篩選信用等級:@Html.DropDownList("Cred", "選擇信用等級")<br />
+    篩選最後名稱:@Html.DropDownList("LastNameList", "選擇姓")
+    <input type="submit" value="執行篩選" />
+    </text>
+}
 <table class="table">
     <tr>
         <th>
@@ -25,6 +30,9 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.DateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreditRating)
         </th>
         <th></th>
     </tr>
@@ -45,6 +53,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.DateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreditRating)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ClientId }) |
